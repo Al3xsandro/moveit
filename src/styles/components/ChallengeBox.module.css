@@ -1,7 +1,7 @@
 .ChallengeBoxContainer {
     height: 100%;
 
-    background: var(--white);
+    background: var(--black);
     border-radius: 5px;
     box-shadow: 0 0 68px rgba(0, 0, 0, 0.05);
     padding: 1.5rem 2rem;
@@ -106,10 +106,4 @@
 
 .challengeActive footer button:hover{
     filter: brightness(0.9);
-}
-
-@media(max-width: 720px){
-    .ChallengeBoxContainer {
-        display: flex;
-    }
 }

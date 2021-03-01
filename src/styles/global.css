@@ -5,15 +5,15 @@
 }
 
 :root {
-    --white: #fff;
-    --background: #f2f3f5;
+    --black: rgb(33, 33, 33);
+    --background: #1d1c1c;
     --gray-line: #DCDDE0;
-    --text: #666666;
-    --text-highlight: #B3B9FF;
-    --title: #2E384D;
+    --text: #d0d0d0;
+    --text-highlight: #b5b5b5;
+    --title: #ffffff;
     --red: #E83F5B;
-    --green: #4CD62B;
-    --blue: #5965E0;
+    --green: #4ec92f;
+    --blue: #7083b5;
     --blue-dark: #4953B8;
     --blue-twitter: #2aa9E0;
 }
