@@ -1,5 +1,5 @@
 # NextLevelWeek 4
-Moveit, aplicação construinda em Nextjs para melhorar a sua saúde através da técnica de pomodoro.
+Moveit, aplicação construída em Nextjs para melhorar a sua saúde através da técnica de pomodoro.
 
 <h3>Tecnologias</h3>
 
