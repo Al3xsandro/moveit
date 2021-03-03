@@ -9,11 +9,10 @@ import { ChallengeBox } from '../components/ChallengeBox';
 import { CountDownProvider } from '../contexts/CountdownContext';
 import { GetServerSideProps } from 'next';
 import { ChallengesProvider } from '../contexts/ChallengeContext';
-import { SideBar } from '../components/SideBar';
 
 export default function Home(props) {
   return (
-    <ChallengesProvider 
+    <ChallengesProvider
     level={props.level} 
     currentExperience={props.currentExperience} 
     challengesCompleted={props.challengesCompleted} 
@@ -23,12 +22,10 @@ export default function Home(props) {
           <link rel="shortcut icon" href="favicon.png" type="image/x-png"/>
           <title>Inicio | moveit</title>
         </Head>
-
-        <SideBar />
-
-        <ExperienceBar />
         
+        <ExperienceBar />
         <CountDownProvider>
+          
           <section>
               <div>
                 <Profile/>
@@ -38,6 +35,7 @@ export default function Home(props) {
               <div>
                 <ChallengeBox />
               </div>
+              <br/>
           </section>
         </CountDownProvider>
       </div>
@@ -46,7 +44,7 @@ export default function Home(props) {
 }
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const {level, currentExperience, challengesCompleted} = ctx.req.cookies;
+  const {level, name, currentExperience, challengesCompleted} = ctx.req.cookies;
 
   return {
     props: {

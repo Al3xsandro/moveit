@@ -38,7 +38,6 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
 
     const [isLevelUpModalOpen, setIsLevelModalOpen] = useState(false);
 
-
     const [activeChallenge, setActiveChallenge] = useState(null);
 
     const experienceToNextLevel = Math.pow((level + 1) * 4 , 2);
@@ -71,7 +70,7 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
         if(Notification.permission === 'granted') {
             new Notification('Novo desafio 🎉.', {
                 body: `Valendo ${challenge.amount} xp.`,
-                image: './logo-full.svg'
+                image: '/favicon.png'
             })
 
             new Audio('/notification.mp3').play();

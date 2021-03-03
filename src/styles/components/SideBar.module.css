@@ -1,8 +1,23 @@
 .SideBarContainer {
-    height: 100%;
-
-    z-index: 999;
-    background: var(--blue);
+    height: 100vw;
     width: 7rem;
+    background-color: #484c87;
+    position: fixed;
+    z-index: 999;
 
+    display: flex;
+    justify-content: center;
+}
+
+.SideBarContainer div {
+    padding: 10rem;
+}
+
+@media(max-width: 720px){
+    .SideBarContainer {
+        height: 10vh;
+        background-color: #484c87;
+
+        width: 100rem;
+    }
 }

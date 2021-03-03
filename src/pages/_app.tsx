@@ -1,10 +1,16 @@
+import { SideBar } from '../components/SideBar';
+import { useRouter } from 'next/router';
 import '../styles/global.css';
-import { ChallengesProvider } from '../contexts/ChallengeContext';
-import { CountDownProvider } from '../contexts/CountdownContext';
+
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
   return (
-    <Component {...pageProps} />
+    <>
+      {router.pathname !== '/' && <SideBar />}
+      <Component {...pageProps} />
+    </>
   )
 }
 
